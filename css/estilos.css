@@ -235,13 +235,6 @@ footer {
     background-image: linear-gradient(180deg, #0b476f 0%, #041825 100%);   
 }
 
-.footer__item:hover {
-    color: #FFCD48;
-}
-
-.footer__item a:hover {
-    color: #FFCD48;
-}
 
 /* =====================          Parallax        =========================== */
 
