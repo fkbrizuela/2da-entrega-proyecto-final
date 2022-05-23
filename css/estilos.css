@@ -9,6 +9,8 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 /* =====================          HEADER          =========================== */
 
 
@@ -31,7 +33,7 @@ html {
     flex-grow: 1;
     align-self: center;
     text-align: center;
-    font-size: 4vw;
+    font-size: 2.8rem;
     position: relative;
 }
 
@@ -281,6 +283,7 @@ footer {
     text-align: center;
     font-size: 4em;
     margin-top: 50px;
+    color: #fff;
 }
 
 .grid__container{
@@ -498,10 +501,15 @@ span{
     border-radius: 20px 20px 20px 0px;
 }
 
+.comunidad__info a{
+    color:  #ffc107;
+    text-decoration: none;
+}
+
 /*   --------------------     informacion ---------------------   */
 
 .info{
-    margin-bottom: 250px;
+    margin: 20vh 0;
 }
 
 .info__Container{
@@ -525,14 +533,10 @@ span{
     margin-bottom: 10px;
 }
 
-/* Media queries
-    min-width > ancho minimo de la pantalla
-    max-width > ancho máximo de la pantalla
-    MEDIDAS RELATIVAS
-    REM --- medida estandar que se multiplica y toma de base el tamaño minimo de la letra del disposiivo (tamaño de la letra 32px - 1rem es 32px)
-    EM -- toma de base el tamaño minimo de la M del dispositivo (mañano maximo de la letra m que es la mitad si una letra mayuscula como H la m es más chica, 12px de H entonces la m tendria entre 10 a 6px ejemplo 8px de referencia osea 1EM = 8px 
-    PORCENTAJES -- Son las mas faciles, las menos recomendadas
-*/
+/* etiquetas a */
+
+
+
 /*TABLET*/
 @media (min-width:541px) and (max-width:980px) {
     .grid__container{
@@ -608,6 +612,9 @@ span{
 /*CELULAR*/
 @media (min-width: 320px) and (max-width: 540px){ 
 
+    .presentacion h2{
+        font-size: 1.2rem; 
+    }
     .evento__grid {
         grid-template-rows: 0.3fr 1fr 0.6fr 1fr 0.6fr 1fr 0.6fr 1fr;
         grid-template-columns: 1fr ;
@@ -635,7 +642,16 @@ span{
     .info__Container{
         height: 50vh;
     }
+    /* ------------ Comunidad ---------------  */
 
+    .comunidad__info{
+        display: flex;
+        flex-direction: column;
+    }
+    .comunidad__img{
+        align-self: center;
+        margin-bottom: 1rem;
+    }
 }
 
 
